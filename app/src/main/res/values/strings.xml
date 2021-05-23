@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">UnCDeliveryApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="swipe_left_for_register">Deslize para a esquerda para registrar</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="subtitle">App Android</string>
+    <string name="swipe_right_for_login">Deslize para a direita para logar</string>
+    <string name="register">Registrar</string>
+    <string name="re_type_password">Redigite a senha</string>
+    <string name="your_name">Nome Completo</string>
+</resources>
