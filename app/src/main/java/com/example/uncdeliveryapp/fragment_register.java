@@ -42,9 +42,9 @@ public class fragment_register extends Fragment {
     {
         View view =  inflater.inflate(R.layout.fragment_register, container, false);
         btn_register = (Button) view.findViewById(R.id.btn_register);
-        edt_nome = (EditText) view.findViewById(R.id.edt_name);
-        edt_email = (EditText) view.findViewById(R.id.edt_email);
-        edt_senha = (EditText) view.findViewById(R.id.edt_password);
+        edt_nome = (EditText) view.findViewById(R.id.edt_transp);
+        edt_email = (EditText) view.findViewById(R.id.edt_regiao);
+        edt_senha = (EditText) view.findViewById(R.id.edt_estado);
 
         btn_register.setOnClickListener(new View.OnClickListener()
         {

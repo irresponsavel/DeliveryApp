@@ -14,7 +14,7 @@
         android:layout_marginStart="25dp"
         android:layout_marginTop="60dp"
         android:layout_marginBottom="5dp"
-        android:text="@string/register"
+        android:text="Registrar"
         android:textAlignment="center"
         android:textSize="50sp" />
 
@@ -22,10 +22,10 @@
         android:id="@+id/subtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/subtitle"
-        android:textSize="17sp"
         android:layout_marginStart="25dp"
-        android:layout_marginBottom="50dp"/>
+        android:layout_marginBottom="50dp"
+        android:text="Transportadora"
+        android:textSize="17sp" />
 
     <EditText
         android:id="@+id/edt_transp"
@@ -35,8 +35,8 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/edt_custom"
-        android:hint="@string/your_name"
-        android:inputType="textPersonName"
+        android:hint="Nome da transportadora"
+        android:inputType="text"
         android:padding="15dp"
         android:textColor="@android:color/black"
         android:textColorHint="@android:color/darker_gray"
@@ -50,8 +50,8 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/edt_custom"
-        android:hint="@string/e_mail"
-        android:inputType="textEmailAddress"
+        android:hint="Região"
+        android:inputType="text"
         android:padding="15dp"
         android:textColor="@android:color/black"
         android:textColorHint="@android:color/darker_gray"
@@ -65,8 +65,23 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/edt_custom"
-        android:hint="@string/password"
-        android:inputType="textPassword"
+        android:hint="Estado"
+        android:inputType="text"
+        android:padding="15dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/edt_Cidade"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edt_custom"
+        android:hint="Cidade"
+        android:inputType="text"
         android:padding="15dp"
         android:textColor="@android:color/black"
         android:textColorHint="@android:color/darker_gray"
@@ -79,8 +94,8 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/edt_custom"
-        android:hint="@string/re_type_password"
-        android:inputType="textPassword"
+        android:hint="CNPJ"
+        android:inputType="text"
         android:padding="15dp"
         android:textColor="@android:color/black"
         android:textColorHint="@android:color/darker_gray"
@@ -95,30 +110,13 @@
             android:id="@+id/btn_register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/btn_custom"
+            android:layout_centerInParent="true"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="30dp"
-            android:layout_centerInParent="true"
-            android:textColor="@android:color/white"
-            android:text="@string/register"/>
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/ico_arrow_left"
-            android:layout_above="@id/swipeLeft"
-            android:layout_centerHorizontal="true"/>
-
-        <TextView
-            android:id="@+id/swipeLeft"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/swipe_right_for_login"
-            android:textSize="15sp"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="20dp"/>
+            android:background="@drawable/btn_custom"
+            android:text="@string/register"
+            android:textColor="@android:color/white" />
 
     </RelativeLayout>
 

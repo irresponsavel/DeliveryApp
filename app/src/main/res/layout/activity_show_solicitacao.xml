@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_show_solicitacao">
+
+    <TextView
+        android:id="@+id/tx_titulo2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Dados da Solicitação"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <TextView
+        android:id="@+id/tx_titulo3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Dados da Transportadora"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tx_titulo2"
+        app:layout_constraintTop_toBottomOf="@+id/tx_chave_acesso" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_account" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Victor Matheus Bordin"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Armazém UnC Rio Negro"
+            android:textSize="18dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/tx_nome_solicitante"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Solicitante"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/tx_titulo2"
+        app:layout_constraintTop_toBottomOf="@+id/tx_titulo2" />
+
+    <EditText
+        android:id="@+id/tx_nome_solicitante4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Nome do Motorista"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/tx_data_solicitacao2"
+        app:layout_constraintStart_toStartOf="@+id/tx_nome_transp"
+        app:layout_constraintTop_toBottomOf="@+id/tx_nome_transp" />
+
+    <EditText
+        android:id="@+id/tx_nome_solicitante5"
+        android:layout_width="182dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Placa Carreta"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/tx_nome_solicitante4"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tx_nome_solicitante4"
+        app:layout_constraintTop_toBottomOf="@+id/tx_nome_solicitante4" />
+
+    <EditText
+        android:id="@+id/tx_nome_solicitante6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Placa Cavalo"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/tx_nome_solicitante5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tx_nome_solicitante4"
+        app:layout_constraintTop_toBottomOf="@+id/tx_nome_solicitante4" />
+
+    <EditText
+        android:id="@+id/tx_chave_acesso"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Chave de Acesso"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/tx_data_solicitacao"
+        app:layout_constraintStart_toStartOf="@+id/tx_nome_solicitante"
+        app:layout_constraintTop_toBottomOf="@+id/tx_nome_solicitante" />
+
+    <EditText
+        android:id="@+id/tx_nome_transp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Transportadora"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/tx_titulo3"
+        app:layout_constraintTop_toBottomOf="@+id/tx_titulo3" />
+
+    <EditText
+        android:id="@+id/tx_data_solicitacao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Data"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@+id/tx_titulo2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tx_nome_solicitante"
+        app:layout_constraintTop_toTopOf="@+id/tx_nome_solicitante" />
+
+    <EditText
+        android:id="@+id/tx_data_solicitacao2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Horário Chegada"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@+id/tx_titulo3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tx_nome_transp"
+        app:layout_constraintTop_toTopOf="@+id/tx_nome_transp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Alterar"
+        app:layout_constraintEnd_toEndOf="@+id/tx_nome_solicitante5"
+        app:layout_constraintTop_toBottomOf="@+id/tx_nome_solicitante5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

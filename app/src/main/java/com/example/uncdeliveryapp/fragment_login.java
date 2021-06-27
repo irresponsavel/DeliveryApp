@@ -1,6 +1,5 @@
 package com.example.uncdeliveryapp;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -46,14 +45,15 @@ public class fragment_login extends Fragment {
         View view =  inflater.inflate(R.layout.fragment_login, container, false);
         // vinculandos os objetos da classe aos componentes do front
         btnLogin = (Button) view.findViewById(R.id.btn_login);
-        edtEmail = (EditText) view.findViewById(R.id.edt_email);
-        edtPass = (EditText) view.findViewById(R.id.edt_password);
+        edtEmail = (EditText) view.findViewById(R.id.edt_regiao);
+        edtPass = (EditText) view.findViewById(R.id.edt_estado);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // chamando a função de login
-                login();
+                //login();
+                CallMain();
             }
         });
         return view;
@@ -112,7 +112,7 @@ public class fragment_login extends Fragment {
     }
 
     public void CallMain(){
-        Intent i = new Intent(getActivity(),TelaPrincipal.class);
+        Intent i = new Intent(getActivity(), activity_cadastro_transportadora.class);
         i.putExtra("usuario", edtEmail.getText());
         startActivity(i);
 
