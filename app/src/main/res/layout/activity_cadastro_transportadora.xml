@@ -28,7 +28,7 @@
         android:textSize="17sp" />
 
     <EditText
-        android:id="@+id/edt_transp"
+        android:id="@+id/edt_nome"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="20dp"
@@ -43,7 +43,7 @@
         android:textSize="15sp" />
 
     <EditText
-        android:id="@+id/edt_regiao"
+        android:id="@+id/edt_login"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="20dp"
@@ -58,7 +58,7 @@
         android:textSize="15sp" />
 
     <EditText
-        android:id="@+id/edt_estado"
+        android:id="@+id/edt_senha"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="20dp"
@@ -88,7 +88,7 @@
         android:textSize="15sp" />
 
     <EditText
-        android:id="@+id/edt_cnpj"
+        android:id="@+id/edt_conf_senha"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="20dp"

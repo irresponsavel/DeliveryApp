@@ -13,10 +13,8 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -37,11 +35,11 @@ public class activity_cadastro_transportadora extends AppCompatActivity {
 
 
         buttonRegister = (Button)findViewById(R.id.btn_register);
-        edtTransp = (EditText)findViewById(R.id.edt_transp);
-        edtRegiao = (EditText)findViewById(R.id.edt_regiao);
+        edtTransp = (EditText)findViewById(R.id.edt_nome);
+        edtRegiao = (EditText)findViewById(R.id.edt_login);
         edtCidade = (EditText)findViewById(R.id.edt_Cidade);
-        edtEstado = (EditText)findViewById(R.id.edt_estado);
-        edtCnpj = (EditText)findViewById(R.id.edt_cnpj);
+        edtEstado = (EditText)findViewById(R.id.edt_senha);
+        edtCnpj = (EditText)findViewById(R.id.edt_conf_senha);
 
         buttonRegister.setOnClickListener(new View.OnClickListener() {
             @Override

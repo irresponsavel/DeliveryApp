@@ -28,7 +28,7 @@
         app:layout_constraintTop_toBottomOf="@+id/title" />
 
     <EditText
-        android:id="@+id/edt_regiao"
+        android:id="@+id/edt_login"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="200dp"
@@ -43,7 +43,7 @@
         app:layout_constraintTop_toBottomOf="@+id/subtitle" />
 
     <EditText
-        android:id="@+id/edt_estado"
+        android:id="@+id/edt_senha"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_centerHorizontal="true"
@@ -57,7 +57,7 @@
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edt_regiao" />
+        app:layout_constraintTop_toBottomOf="@+id/edt_login" />
 
     <Button
         android:id="@+id/btn_login"
@@ -71,7 +71,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edt_estado"
+        app:layout_constraintTop_toBottomOf="@+id/edt_senha"
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
